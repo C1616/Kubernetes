@@ -5,12 +5,12 @@ Our goal was to keep a replication of tables in a slave instance which will only
 Also, there were 8 masters of MySQL databases and we need to replicate certain tables into one database in the slave instance.
 So, while researching this I came around this MySQL operator by oracle which works something different but is still very effective.
 
-## Prerequisites
+## 1.0 Prerequisites
 - A Kubernetes v1.8.0+ cluster
   - **P.S** this project uses the above ↑ mentioned Kubernetes cluster [solution](https://github.com/wagnerjfr/wagnerjfr-kubernetes-cluster-vm-vagrant) running locally in the host computer
 - Have [Helm](https://helm.sh/docs/intro/install/) installed and configured in your cluster.
 - Oracle MySQL Operator
--ubuntu 20.04
+- ubuntu 20.04
 
 ## 2.1. Setting up
 The first time you create a MySQL Cluster in a namespace (other than in the namespace into which you installed the `mysql-operator`) you need to create the mysql-agent *ServiceAccount* and *RoleBinding* in that namespace, in our case will be `innodb-cluster`, run:
