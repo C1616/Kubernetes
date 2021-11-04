@@ -1,5 +1,5 @@
-# Kubernetes
-My Kubernetes Journey
+#Deploying MySQL High Available solution  using oracle Mysql Operator and Kubernetes
+
 A few weeks earlier at the office, I was assigned a task to make a replication of the database in Kubernetes.
 Our goal was to keep a replication of tables in a slave instance which will only have read-only access.
 Also, there were 8 masters of MySQL databases and we need to replicate certain tables into one database in the slave instance.
